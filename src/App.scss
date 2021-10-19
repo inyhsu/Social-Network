@@ -1,1 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+
+$black: black;
+
+.row{
+    height: 100vh;
+}
+
+.col-sm-2{
+    border-right: 1px solid $black;
+}

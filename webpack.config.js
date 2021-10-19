@@ -13,6 +13,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+            {
                 test: /.js$/,
                 exclude: /node_modules/,
                 use: {
@@ -22,13 +26,8 @@ module.exports = {
                     }
                 }
             },
-            {
-                test: /\.s[ac]ss$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-            },
         ]
     },
-    plugins: [new MiniCssExtractPlugin()],
     devServer: {
         static: {
             directory: path.join(__dirname, 'build'),
