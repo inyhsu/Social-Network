@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/bootstrap";
+@import "colors";
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.curser-pointer{
+    cursor: pointer;
+}
+
+.row{
+    height: 100vh;
+}
+
+.col-sm-2{
+    border-right: 1px solid $black;
+}
