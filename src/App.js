@@ -3,6 +3,7 @@ import Wrapper from './UI/Wrapper'
 import { Row, Col } from 'react-bootstrap';
 
 import ListButton from './UI/ListButton'
+import ChatContainer from './components/Chat/ChatContainer'
 
 const App = props => {
     return (
@@ -12,7 +13,9 @@ const App = props => {
                     <Col sm={2} className="align-center">
                         <ListButton className="curser-pointer" name="Messages"/>
                     </Col>
-                    <Col sm={10} className="align-center">sm=10</Col>
+                    <Col sm={10}>
+                        <ChatContainer />
+                    </Col>
                 </Row>
             </Wrapper>
         </>

@@ -1,0 +1,10 @@
+@use "../../style/colors";
+
+
+.chat{
+    &__title{
+        border-bottom: 1px solid colors.$shadow;
+        margin-left: -13px;
+        padding: 10px;
+    }
+}

@@ -1,5 +1,5 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { web } = require('webpack');
 
 module.exports = {
     mode: 'development',
@@ -28,6 +28,8 @@ module.exports = {
             },
         ]
     },
+    //to fixed the auto reload
+    target: "web",
     devServer: {
         static: {
             directory: path.join(__dirname, 'build'),
