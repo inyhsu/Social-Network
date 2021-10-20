@@ -7,4 +7,11 @@
         margin-left: -13px;
         padding: 10px;
     }
+
+    &__preview-container{
+        display: flex;
+        justify-content: start;
+        padding: 10px;
+    }
+
 }
