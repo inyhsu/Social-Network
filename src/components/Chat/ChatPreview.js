@@ -1,12 +1,18 @@
 import React from 'react';
 
-const ChatPreview = props =>{
-    return(
+import Avatar from 'react-avatar';
+import ChatPreviewDetail from './ChatPreviewDetail'
+
+const ChatPreview = props => {
+    return (
         <>
-            <div className="chat__preview-container">
-                <div>pic</div>
-                <div>message</div>
-            </div>
+            <ChatPreviewDetail />
+            <ChatPreviewDetail />
+            <ChatPreviewDetail />
+            <ChatPreviewDetail />
+            <ChatPreviewDetail />
+            <ChatPreviewDetail />
+            
         </>
     )
 }
