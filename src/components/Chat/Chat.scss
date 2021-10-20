@@ -12,6 +12,11 @@
         display: flex;
         justify-content: start;
         padding: 10px;
+        align-items: center;
+    }
+
+    &__preview-message{
+        margin-left: 0.5rem;
     }
 
 }
