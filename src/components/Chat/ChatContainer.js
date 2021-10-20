@@ -1,10 +1,18 @@
 import React from 'react';
 import './Chat.scss';
 
+import ChatList from './ChatList'
+import { Col } from 'react-bootstrap';
+
 const ChatContainer = props => {
-    return(
+    return (
         <>
-            <div className="chat__title">Messages</div>
+            <Col sm={3} className="border-right height-100"> 
+                <div className="chat__title">Messages</div>
+                <ChatList />
+            </Col>
+            <Col sm={7}>
+            </Col>
         </>
     )
 }

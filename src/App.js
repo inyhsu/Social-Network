@@ -9,8 +9,8 @@ const App = props => {
     return (
         <>
             <Wrapper>
-                <Row>
-                    <Col sm={2} className="align-center">
+                <Row className="height-100">
+                    <Col sm={2} className="align-center border-right">
                         <ListButton className="curser-pointer" name="Messages"/>
                     </Col>
                     <Col sm={10}>
