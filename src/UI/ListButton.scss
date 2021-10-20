@@ -1,0 +1,11 @@
+@use "../style/colors";
+
+
+.list-button{
+    padding: 8px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    &:hover{
+        background-color: colors.$shadow;
+    }
+}
