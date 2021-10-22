@@ -2,10 +2,16 @@
 
 
 .list-button{
+    display: flex;
+    justify-content: start;
     padding: 8px 20px;
     border: 1px solid transparent;
     border-radius: 20px;
+    align-items: center;
     &:hover{
         background-color: colors.$shadow;
+    }
+    &__name{
+        margin-left: 5px;
     }
 }
